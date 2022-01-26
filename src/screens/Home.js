@@ -1,11 +1,11 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, StackActions } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import HomeScreen from "./src/screens/HomeScreen";
-import Personal from "./src/screens/Personal";
-import Community from "./src/screens/Community";
-import News from "./src/screens/News"
+import HomeScreen from "./HomeScreen";
+import News from "./News";
+import Personal from "./Personal";
+import Community from "./Community";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +38,7 @@ function MyTab() {
     </Tab.Navigator>
   );
 }
-export default function App() {
+export default function Home() {
   return (
     <NavigationContainer>
       <MyTab />
